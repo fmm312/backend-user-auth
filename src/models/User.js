@@ -19,7 +19,9 @@ const UserSchema = new Schema({
     deleted: {
         type: Boolean,
         default: false
-    }
+    },
+    token: Boolean,
+    expiration: String
 }, {
     timestamps: true
 });
